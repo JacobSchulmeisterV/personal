@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jacob Schulmeister V</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- This is a navigation bar -->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Profile Photo" id="profilePic">
+            <h1>Jacob Schulmeister V</h1>
+            <p class="subtitle">Software Engineer</p>
+            <p class="description">I am a student at Iowa State University studying Software engineering. I am interested in embedded systems and programming things like autonomous robot movements. I am also interested in AI and using it to help make people's lives better. I am looking for an Internship for summer 2024 or a coop for Fall 2024 or Spring 2025</p>
+            <h3>Skills</h3>
+            <div class="skills">
+                <h4>Frontend:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+                <h4>Backend/App:</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                <h4>Embedded:</h4>
+                <ul>
+                    <li>Arduino</li>
+                    <li>C</li>
+                    <li>Simple Verilog</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="description">I have developed several programming projects for various platforms and purposes. Some are personal, while others are work or school related. Here, I have compiled a short list of a few of the things I have completed.</p>
+            <div class="project">
+                <img src="images/AutoTexterBrainIcon512.png" alt="AI Auto Reply Icon" width ="200px">
+                <h3>AI Auto Reply</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.ImpulseAI.AIAutoReply&hl=en-US&ah=G2Ms2u0QXyHEn55ca5vHyJ2DshE" target="_blank">Find it on Google Play</a>
+                <p>This is the debut app for a company that I cofounded, Impulse AI, and is an android mobile app that utilizes a large language model API from OpenAI to generate responses to text messages. The user can tailor the response to their needs by selecting the tone, mood, position, and other options. AI Auto Reply is available on the Google Play store.</p>
+            </div>
+            <div class="project">
+                <!-- <img src="images/AutoTexterBrainIcon512.png" alt="AI Auto Reply Icon" width ="150px"> -->
+                <h3>Realtime Marine Tracker</h3>
+                <a href="https://github.com/GameChanger77/realtime_marine_tracker" target="_blank">View Code on GitHub</a>
+                <p>This is a final project that I developed for a web development class in Iowa State University as part of a two man team. It is designed to run on a raspberry pi with an arduino, waterlevel sensor, and DHT11 humidity sensor attached. The raspberry pi hosts a database and a backend server that holds and retrieves the data from the sensors. It also hosts a react webpage for the frontend that lets the user see the realtime data as well as historical data charts for the last 8 minues.</p>
+            </div>
+            <div class="project">
+                <img src="images/Robot.png" alt="Robot Doing Wheelie" width ="200px">
+                <h3>FTC Robot Odometry System</h3>
+                <a href="https://github.com/GameChanger77/FtcRobotController/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" target="_blank">View Code on GitHub</a>
+                <p>This is the code for my team's robot for the FIRST Tech Challenge (FTC) robot competition (2021-2022). I was the lead programmer on my team and wrote just about all of the code, except for the base sdk that is provided by the people who run FTC. Our robot code was quite complex and included Odometry, Field Oriented Drive, auto locking the robot's direction to certain angles, game element detection with a webcam, and obstacle detection with four distance sensors. There are also numerous opmodes, which are used to set the robot's control from various driver controls to many different autonomous modes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Questions? Contact Me</h2>
+            <p>You can reach me at <a href="mailto:jdschul5@iastate.edu">jdschul5@iastate.edu</a></p>
+            <p>View all my Public Projects on <a href="https://github.com/GameChanger77" target="_blank">GitHub</a></p>
+            <p>Check out Impulse AI, <a href="https://impulseai.ai/" target="_blank">the company I cofounded</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jacob Schulmeister V</p>
+    </footer>
+</body>
+
+</html>
