@@ -22,23 +22,25 @@
             <div class="skills">
                 <h4>Frontend:</h4>
                 <ul>
+                    <li>React</li>
+                    <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
                 </ul>
                 <h4>Backend/App:</h4>
                 <ul>
                     <li>Java</li>
+                    <li>C#/.NET</li>
                     <li>Python</li>
                     <li>NodeJS</li>
-                    <li>SQL</li>
+                    <li>MySQL</li>
                 </ul>
                 <h4>Embedded:</h4>
                 <ul>
                     <li>C/C++</li>
                     <li>Arduino</li>
-                    <li>Tiva TM4C123</li>
+                    <li>Feather S2</li>
+                    <li>Tiva TM4C123G</li>
                 </ul>
             </div>
         </div>
@@ -48,22 +50,42 @@
         <div class="container">
             <h2>Projects</h2>
             <p class="description">I have developed several programming projects for various platforms and purposes. Some are personal, while others are work or school related. Here, I have compiled a short list of a few of the things I have completed.</p>
-            <div class="project">
-                <img src="images/Robot.png" alt="Robot Doing Wheelie" width ="200px">
-                <h3>FTC Robot Odometry System</h3>
-                <a href="https://github.com/GameChanger77/FtcRobotController/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" target="_blank">View Code on GitHub</a>
-                <p>This is the code for my team's robot for the FIRST Tech Challenge (FTC) robot competition (2021-2022). I was the lead programmer on my team and wrote just about all of the code, except for the base sdk that is provided by the people who run FTC. Our robot code was quite complex and included Odometry, Field Oriented Drive, auto locking the robot's direction to certain angles, game element detection with a webcam, and obstacle detection with four distance sensors. There are also numerous opmodes, which are used to set the robot's control from various driver controls to many different autonomous modes.</p>
-            </div>
-            <div class="project">
-                <h3>Realtime Marine Tracker</h3>
-                <a href="https://github.com/GameChanger77/realtime_marine_tracker" target="_blank">View Code on GitHub</a>
-                <p>This is a final project that I developed for a web development class in Iowa State University as part of a two man team. It is designed to run on a raspberry pi with an arduino, waterlevel sensor, and DHT11 humidity sensor attached. The raspberry pi hosts a database and a backend server that holds and retrieves the data from the sensors. It also hosts a react webpage for the frontend that lets the user see the realtime data as well as historical data charts for the last 8 minues.</p>
-            </div>  
-            <div class="project">
-                <img src="images/AutoTexterBrainIcon512.png" alt="AI Auto Reply Icon" width ="200px">
-                <h3>AI Reply</h3>
-                <a href="https://play.google.com/store/apps/details?id=com.ImpulseAI.AIReply" target="_blank">Find it on Google Play</a>
-                <p>This is the debut app for a company that I cofounded, Impulse AI, and is an android mobile app that utilizes a large language model API from OpenAI to generate responses to text messages. The user can tailor the response to their needs by selecting the tone, mood, position, and other options. AI Reply is available on the Google Play store.</p>
+            <div class="projects-layout">
+                <div class="project-column">
+                    <h3 class="project-column-title">Embedded Projects</h3>
+                    <div class="project">
+                        <img src="images/cybot.png" alt="iRobot create 2 with the Launchpad on top" width="200">
+                        <h3>Tiva TM4C123G "CyBot"</h3>
+                        <a href="https://github.com/parkerp0/godzillaHunter" target="_blank">View Code on GitHub</a>
+                        <p>Embedded software lab and final project using an iRobot Create 2 platform with an added Tiva C Series TM4C123G Launchpad. Focused on low-level programming in C, MCU register control, sensor integration, communication protocols (I2C and UART), and autonomous movement logic. The final project was to search for the largest obstacle, which we dubbed "Godzilla" and then to ram the CyBot into it to knock it down. To do this we had to navigate the environment, which had multiple obsticales and pits, requiring our sensors and algorithms to work together seamlessly.<p>
+                    </div>
+                    <div class="project">
+                        <img src="images/Robot.png" alt="Robot Doing Wheelie" width="200">
+                        <h3>FTC Robot Odometry System</h3>
+                        <a href="https://github.com/GameChanger77/FtcRobotController/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" target="_blank">View Code on GitHub</a>
+                        <p>FIRST Tech Challenge (FTC) robot code for the 2021-2022 season. Being the lead programmer on my team, I implemented odometry, autonomous path planning and tracking, 360° obstacle detection through lidar, autonomous obstacle avoidance, field-oriented drive using mecanum wheels, driver control enhancement features, and game element detection using a webcam. </p>
+                    </div>
+                    <div class="project">
+                        <h3>Realtime Marine Tracker</h3>
+                        <a href="https://github.com/GameChanger77/realtime_marine_tracker" target="_blank">View Code on GitHub</a>
+                        <p>This is a final project that I developed for a web development class in Iowa State University as part of a two man team. It is designed to run on a raspberry pi with an arduino, waterlevel sensor, and DHT11 humidity sensor attached. The raspberry pi hosts a database and a backend server that holds and retrieves the data from the sensors. It also hosts a react webpage for the frontend that lets the user see the realtime data as well as historical data charts for the last 8 minues.</p>
+                    </div>
+                </div>
+                <div class="project-column">
+                    <h3 class="project-column-title">Full-Stack Development</h3>
+                    <div class="project">
+                        <img src="images/impulse-analyzer-logo.png" alt="Impulse Analyzer Icon" width="200">
+                        <h3>Impulse Analyzer</h3>
+                        <a href="https://impulseanalyzer.com/" target="_blank">More Info Here</a>
+                        <p>Impulse Analyzer is a hybrid self-hosted analytics platform that lets teams query their data, formulate explanations, and generate graphs by using natural language and AI. It connects directly to a company's existing databases and services to deliver fast, contextual insights without moving your data to third-party systems. It also integrates with company handbooks/manuals and employee calendars to give even more power to the user.</p>
+                    </div>
+                    <div class="project">
+                        <img src="images/AutoTexterBrainIcon512.png" alt="AI Reply Icon" width="200">
+                        <h3>AI Reply</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.ImpulseAI.AIReply" target="_blank">Find it on Google Play</a>
+                        <p>This is the debut app for a company that I cofounded, Impulse AI, and is an android mobile app that utilizes a large language model API from OpenAI to generate responses to text messages. The user can tailor the response to their needs by selecting the tone, mood, position, and other options. AI Reply is available on the Google Play store.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -71,7 +93,8 @@
     <section id="contact">
         <div class="container">
             <h2>Questions? Contact Me</h2>
-            <p>You can reach me at <a href="mailto:jdschul5@iastate.edu">jdschul5@iastate.edu</a></p>
+            <p>You can reach me at <a href="mailto:jschulmeisterv@gmail.com">jschulmeisterv@gmail.com</a></p>
+            <p>Find out more on my <a href="https://www.linkedin.com/in/jacob-schulmeister-v/" target="_blank">LinkedIn</a></p>
             <p>View all my Public Projects on <a href="https://github.com/GameChanger77" target="_blank">GitHub</a></p>
             <p>Check out Impulse AI, <a href="https://impulseai.ai/" target="_blank">the company I cofounded</a></p>
         </div>
