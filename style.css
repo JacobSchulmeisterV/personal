@@ -4,9 +4,9 @@
     --bg-surface: #252526;
     --bg-elevated: #2d2d30;
     --bg-nav: #333333;
-    --text-primary: #d4d4d4;
+    --text-primary: #f0efef;
     --text-heading: #ffffff;
-    --text-muted: #9da5b4;
+    --text-muted: #c7d0df;
     --accent: #569cd6;
     --accent-strong: #3794ff;
     --border: #3c3c3c;
@@ -107,7 +107,7 @@ a:visited {
 }
 
 #profilePic {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 2px solid var(--border);
@@ -124,8 +124,14 @@ h1 {
     margin-bottom: 10px;
 }
 
+.title {
+    font-size: 36px;
+    margin: 5px;
+}
+
 .subtitle {
     color: var(--accent);
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -205,7 +211,7 @@ footer {
     }
 
     #profilePic {
-        width: 100px;
+        width: 80px;
         margin-bottom: 10px;
     }
 
